@@ -30,7 +30,7 @@ Author:
                         <div class="tab-content btc_shop_index_content_tabs_main jb_cover">
                             <div id="grid" class="tab-pane active">
                                 <div class="row">
-                                    @foreach($companies as $post)
+                                    @foreach($products as $post)
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="job_listing_left_fullwidth job_listing_grid_wrapper jb_cover">
                                             <div class="row">
@@ -43,7 +43,7 @@ Author:
                                                     <h4><a href="#">{{$post['name']}}</a></h4>
 
                                                         <ul>
-                                                            <li><i class="flaticon-location-pointer"></i>&nbsp; {{$post['city']}}</li>
+                                                            <li><i class="flaticon-price-pointer"></i>&nbsp; {{$post['price']}}</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -70,7 +70,7 @@ Author:
                                     @endforeach
                             <div class="blog_pagination_section jb_cover">
                                 <ul>
-                                  {{$companies->links()}}
+                                  {{$products->links()}}
                                 </ul>
                             </div>
                         </div>

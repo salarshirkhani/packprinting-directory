@@ -2,15 +2,14 @@
 
 
 //------------------------------------------------------------INDEX ROUTES
-use App\Company;
 
-Route::get('/', function () {
-    return view('directory')->with([
-        'companies' => Company::where('state', 'accepted')->orderBy('created_at', 'desc')->get()
-    ]);
-});
+Route::get('/', [ 'uses' => 'IndexController@GetDirectory', 'as' => '/']);
 
-Route::get('companies', [ 'uses' => 'IndexController@GetCompanies', 'as' => '/']);
+Route::get('companies', [ 'uses' => 'IndexController@GetCompanies', 'as' => 'companies']);
+
+Route::get('products', [ 'uses' => 'IndexController@GetProducts', 'as' => 'products']);
+
+
 
 //---------------------------------------------------------------------
 
