@@ -115,3 +115,59 @@
         </div>
         <!--/.row-->
     </div>
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop gradient-color">
+            <div class="wave waveTop"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer Wrapper End -->
+<!-- chat box Wrapper start -->
+<div id="chat-circle" class="btn btn-raised">
+    <i class="fas fa-comment-alt"></i>
+</div>
+<div class="chat-box">
+    <div class="chat-box-header">
+       باکس چت
+        <span class="chat-box-toggle"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="chat-box-body">
+        <div class="chat-box-overlay">
+        </div>
+        <div class="chat-logs">
+
+        </div>
+        <!--chat-log -->
+    </div>
+    <div class="chat-input">
+        <form>
+            <input type="text" id="chat-input" placeholder="ارسال یک پیام..." />
+  <button type="submit" class="chat-submit" id="chat-submit"><i class="fas fa-paper-plane"></i></button>
+  </form>      
+</div>
+</div>
+<!-- chat box Wrapper end -->
+<!--custom js files-->
+<script src="{{asset('dir/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('dir/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('dir/js/modernizr.js')}}"></script>
+<script src="{{asset('dir/js/jquery.menu-aim.js')}}"></script>
+<script src="{{asset('dir/js/plugin.js')}}"></script>
+<script src="{{asset('dir/js/owl.carousel.js')}}"></script>
+<script src="{{asset('dir/js/jquery-ui.js')}}"></script>
+<script src="{{asset('dir/js/jquery.countTo.js')}}"></script>
+<script src="{{asset('dir/js/jquery.magnific-popup.js')}}"></script>
+<script src="{{asset('dir/js/dropify.min.js')}}"></script>
+<script src="{{asset('dir/js/jquery.inview.min.js')}}"></script>
+<script src="{{asset('dir/js/jquery.nice-select.min.js')}}"></script>
+<script src="{{asset('dir/js/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('dir/js/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('dir/js/custom.js')}}"></script>

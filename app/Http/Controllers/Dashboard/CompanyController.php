@@ -42,7 +42,7 @@ class CompanyController extends Controller
 
         $company = new Company($data);
         $company->category()->associate($data['category_id']);
-        $company->creator()->save(Auth::user());
+        $company->creator()->associate(Auth::user());
         $company->logo = $request->file('logo')->store('logos', 'public');
         $company->video = $request->file('video')->store('videos', 'public');
         $company->save();

@@ -5,9 +5,11 @@
 
 Route::get('/', [ 'uses' => 'IndexController@GetDirectory', 'as' => '/']);
 
-Route::get('companies', [ 'uses' => 'IndexController@GetCompanies', 'as' => 'companies']);
+Route::get('companies', [ 'uses' => 'CompanyController@GetCompanies', 'as' => 'companies']);
+Route::get('companies/single/{id}/{name}', [ 'uses' => 'CompanyController@GetCompaniesSingle', 'as' => 'companies/single']);
 
-Route::get('products', [ 'uses' => 'IndexController@GetProducts', 'as' => 'products']);
+
+Route::get('products', [ 'uses' => 'ProductIndexController@GetProducts', 'as' => 'products']);
 
 
 

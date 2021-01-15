@@ -12,16 +12,17 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
 
-class IndexController extends Controller
+class ProductController extends Controller
 {
 
-    public function GetDirectory()
+    public function GetProducts()
     {
-        $companies = company::orderBy('created_at', 'desc')->get();
-        return view('directory')
-            ->with(['companies' => $companies])
+        $products = product::orderBy('created_at', 'desc')->paginate(12);
+        return view('products.index')
+            ->with(['products' => $products])
         ;
     }
 
 
-}    
+
+}
